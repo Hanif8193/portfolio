@@ -17,7 +17,7 @@ function Hero() {
         <br className="hidden lg:inline-block" />
         <Typewriter
   options={{
-    strings: ['Html , CSS, Typescript coder.', 'Web Devloper.','Freelancer.'],
+    strings: ['Html , CSS, Typescript coder.','Next.js, Tailwind CSS', 'Runing Python', 'Frontend Devloper.','Freelancer.'],
     autoStart: true,
     loop: true,
   }}
@@ -44,7 +44,7 @@ function Hero() {
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
     <Image  className='object-center object-cover rounded-full border-2xl border-orange-500 shadow-xl mx-auto'   
-     src={img}alt='Hanif'width={200}height={100} />
+     src={img}alt='Hanif'width={400}height={200} />
       
     </div>
   </div>

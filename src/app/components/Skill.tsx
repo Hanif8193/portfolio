@@ -96,9 +96,27 @@ function Skill() {
               
                 <p className="font-bold text-green-500 text-right">90%</p>
             </div>
-          
+            <div className="flex flex-wrap ">
+            
+            <div className="p-4 md:w-1/3">
+              <div className="flex items-center ">
+
+                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-green-500  flex-shrink-0">
+
+               <Image src={UN}alt="HT"width={30}height={30} />
+                </div>
+                <h2 className="text-gray-900 text-lg title-font font-medium">
+                  Runing Python
+                </h2>
+              </div>
+              
+              <div className=" relative h-1 w-full bg-gray-300 rounded"></div>
+              <div className="absolut bg-green-500 h-1 rounded w-{20%} "></div>
+              
+                <p className="font-bold text-green-500 text-right">20%</p>
+            </div>
            
-          
+          </div>
           </div>
         </div>
       </section>
