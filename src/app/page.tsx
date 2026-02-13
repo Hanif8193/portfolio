@@ -7,13 +7,13 @@ import About from "./components/About";
 
 function Home() {
   return (
-    <div>
+    <main>
       <Hero />
-      <Contact />
       <About />
-      <Project />
       <Skill />
-    </div>
+      <Project />
+      <Contact />
+    </main>
   );
 }
 
