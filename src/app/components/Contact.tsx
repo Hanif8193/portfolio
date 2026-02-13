@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
 
 function Contact() {
+  console.log('Contact component rendered/hydrated');
   const [formStatus, setFormStatus] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -22,20 +23,33 @@ function Contact() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setFormStatus('Sending...');
 
-    const recipientEmail = 'hanifmemon27464@gmail.com';
-    const subject = encodeURIComponent(`Message from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
 
-    window.location.href = mailtoLink;
+      const result = await response.json();
 
-    setFormStatus('Your email client should have opened. If not, please send manually.');
-    setName('');
-    setEmail('');
-    setMessage('');
+      if (response.ok) {
+        setFormStatus('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        setFormStatus(`Failed: ${result.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      console.error(error);
+      setFormStatus('Failed to send message.');
+    }
   };
 
   return (
@@ -69,9 +83,9 @@ function Contact() {
                   EMAIL
                 </h2>
                 <div className="flex items-center">
-                  <a href="mailto:hanifmemon27464@gmail.com" className="text-primary leading-relaxed hover:underline">hanifmemon27464@gmail.com</a>
+                  <a href="mailto:hanifdostmuhammad8193@gmail.com" className="text-primary leading-relaxed hover:underline">hanifdostmuhammad8193@gmail.com</a>
                   <button
-                    onClick={() => copyToClipboard('hanifmemon27464@gmail.com', setEmailCopyStatus)}
+                    onClick={() => copyToClipboard('hanifdostmuhammad8193@gmail.com', setEmailCopyStatus)}
                     className="ml-2 p-1 text-xs bg-gray-700 text-white rounded hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                     aria-label="Copy email to clipboard"
                   >
@@ -150,8 +164,8 @@ function Contact() {
               <p className="text-center text-sm text-primary mt-3">{formStatus}</p>
             )}
             <div className="border-t border-white/20 pt-8 mt-8 text-center">
-              <a href="mailto:hanifmemon27464@gmail.com" className="text-primary hover:underline">
-                hanifmemon27464@gmail.com
+              <a href="mailto:hanifdostmuhammad8193@gmail.com" className="text-primary hover:underline">
+                hanifdostmuhammad8193@gmail.com
               </a>
               <p className="leading-normal my-5 text-foreground/80">
                 Or find me on social media.
