@@ -6,9 +6,9 @@ import SS from "../../../public/ss1.png"; // Original placeholder
 import SS1 from "../../../public/ss.png";
 import S from "../../../public/s.png";
 import FuelConsumptionPWAImg from "../../../public/Screenshot (430).png"; // Image for Fuel Consumption PWA
-import PhysicalAIImg from "../../../public/Screenshot (429).png"; // Image for Physical AI Introduction
 import FigmaImg from "../../../public/Screenshot (428).png"; // New image for Figma project
-import Hakathon1 from "../../../public/Screenshot (432).png";
+import Hakathon1 from "../../../public/Screenshot (429).png";
+import TodoAppImg from "../../../public/Screenshot (432).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
@@ -21,15 +21,15 @@ const projects = [
   },
   {
     title: "Todo App",
-    description: "A todo app built using Claude Code and Speckit.",
-    image: Hakathon1, // Placeholder image, replace with an appropriate one for this project
-    link: "https://frontend-hazel-gamma-xtb0q17d6f.vercel.app/",
+    description: "A feature-rich Todo application built with Next.js and Tailwind CSS, allowing users to add, complete, and delete tasks with a clean and responsive UI. Developed using Claude Code and Speckit to streamline the development workflow.",
+    image: TodoAppImg,
+    link: "https://todophase5.vercel.app",
     tech: ["Next.js", "Tailwind CSS"]
   },
   {
     title: "Physical AI Introduction",
-    description: "An interactive introduction to physical AI, likely leveraging tools like Claude for code generation, Speckit for speech recognition, and Docusaurus for UI/documentation, providing a dynamic learning experience.",
-    image: PhysicalAIImg, // Image for Physical AI Introduction
+    description: "An e-book providing a comprehensive introduction to Physical AI, covering foundational concepts, real-world applications, and hands-on examples to make AI accessible for learners and enthusiasts.",
+    image: Hakathon1,
     link: "https://frontend-hazel-gamma-xtb0q17d6f.vercel.app/ch01-intro-physical-ai",
     tech: ["Claude Code", "Speckit", "Docusaurus UI"]
   },
@@ -127,11 +127,13 @@ function Project() {
                   {project.title}
                 </h1>
                 <p className="leading-relaxed mb-3 text-foreground/80">{project.description}</p>
-                <Link target="_blank" rel="noopener noreferrer" href={project.link}>
-                  <p className="leading-relaxed py-2 text-primary hover:underline">
-                    View Project →
-                  </p>
-                </Link>
+                {project.link && (
+                  <Link target="_blank" rel="noopener noreferrer" href={project.link}>
+                    <p className="leading-relaxed py-2 text-primary hover:underline">
+                      View Project →
+                    </p>
+                  </Link>
+                )}
               </div>
             </div>
           ))}
