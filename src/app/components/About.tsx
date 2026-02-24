@@ -21,13 +21,13 @@ function About() {
             About Me
           </h1>
           <p className="mb-4 leading-relaxed text-lg">
-            After a long and successful career in another field, I discovered a passion for technology and the endless possibilities of code. This led me to the prestigious Governor&apos;s Initiative for Artificial Intelligence & Computing (GIAIC), where I have fully immersed myself in the world of modern web development.
+            Results-driven Front-End & AI-Focused Developer with hands-on expertise in Next.js, Tailwind CSS, and Python automation systems. Proven ability to design, develop, and deploy scalable web applications, admin dashboards, and AI-powered solutions. Strong problem-solving skills with a focus on clean architecture and production-ready deployments.
           </p>
           <p className="mb-4 leading-relaxed text-lg">
-            I thrive on building beautiful, functional, and user-centric applications. My focus is on fullstack development, where I enjoy bringing ideas to life using technologies like React, Next.js, and TypeScript. I am a firm believer in clean code, continuous learning, and the power of collaboration.
+            I am a dedicated fullstack developer with a passion for creating intuitive, dynamic, and user-friendly web applications. Currently honing my skills in modern web technologies through the Governor&apos;s Initiative for Artificial Intelligence & Computing (GIAIC).
           </p>
           <p className="mb-4 leading-relaxed text-lg">
-            I am now seeking opportunities where I can contribute my unique background, dedication, and strong technical skills to a forward-thinking team.
+            I am deeply passionate about building modern, user-friendly web applications and would love the opportunity to contribute to your team’s innovative projects. It would be a privilege to work alongside forward-thinking teams and continue learning from industry expertise.
           </p>
         </div>
       </div>

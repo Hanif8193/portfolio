@@ -13,7 +13,7 @@ function Footer() {
           <div className="flex items-center gap-4">
             {/* WhatsApp */}
             <Link
-              href="https://wa.me/92300275681"
+              href="https://wa.me/923002756831"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

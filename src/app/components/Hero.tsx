@@ -15,7 +15,7 @@ function Hero() {
             <br className="hidden lg:inline-block" />
             <Typewriter
               options={{
-                strings: ['Building beautiful web experiences.', 'Expert in Next.js & Tailwind CSS.', 'Passionate about clean code.'],
+                strings: ['AI Automation Consultant.', 'Next.js & Tailwind Developer.', 'Python Workflow Engineer.', 'Building Scalable Systems.'],
                 autoStart: true,
                 loop: true,
               }}

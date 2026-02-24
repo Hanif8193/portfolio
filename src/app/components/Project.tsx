@@ -13,6 +13,34 @@ import AnimatedSection from "./AnimatedSection";
 
 const projects = [
   {
+    title: "AI Employee Vault",
+    description: "Built an AI-powered employee management and automation system integrating email workflows and LinkedIn automation.",
+    image: SS1,
+    link: "#",
+    tech: ["Next.js", "AI", "Automation", "LinkedIn API"]
+  },
+  {
+    title: "Salary Attendance App",
+    description: "Developed a Next.js admin dashboard with real-time attendance tracking and automated salary calculation.",
+    image: TodoAppImg,
+    link: "#",
+    tech: ["Next.js", "Tailwind CSS", "Dashboard"]
+  },
+  {
+    title: "Qari (Streamlit App)",
+    description: "Designed and deployed a Python-based interactive web application.",
+    image: SS,
+    link: "#",
+    tech: ["Python", "Streamlit", "Web App"]
+  },
+  {
+    title: "Internship Tier System",
+    description: "Structured scalable Bronze, Silver, Gold & Platinum internship workflow models.",
+    image: Hakathon1,
+    link: "#",
+    tech: ["Workflow Design", "Management"]
+  },
+  {
     title: "Figma Design Implementation",
     description: "A web project demonstrating the implementation of a design from Figma, showcasing attention to detail and ability to translate UI/UX mockups into functional code.",
     image: FigmaImg, // Using the new image

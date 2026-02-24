@@ -33,7 +33,7 @@ function Navbar() {
             {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
           </button>
           <a
-            href={'/GI-AIWMD.pdf'}
+            href={'/Mohammad-Hanif-CV.html'}
             target='_blank'
             rel="noopener noreferrer"
             className="inline-flex items-center bg-primary text-white border-0 py-2 px-4 focus:outline-none hover:bg-primary/80 rounded-lg text-base mt-4 md:mt-0 gap-2 transition-colors ml-4" // Added ml-4 for spacing
