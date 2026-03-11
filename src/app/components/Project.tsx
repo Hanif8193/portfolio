@@ -9,9 +9,17 @@ import FuelConsumptionPWAImg from "../../../public/Screenshot (430).png"; // Ima
 import FigmaImg from "../../../public/Screenshot (428).png"; // New image for Figma project
 import Hakathon1 from "../../../public/Screenshot (429).png";
 import TodoAppImg from "../../../public/Screenshot (432).png";
+import PatiCashImg from "../../../public/Screenshot (1).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
+  {
+    title: "Pati Cash App",
+    description: "A Progressive Web Application (PWA) designed to manage and track petty cash transactions efficiently, offering a seamless and intuitive user experience across all devices.",
+    image: PatiCashImg,
+    link: "https://pati-cash-pwa.vercel.app",
+    tech: ["Next.js", "Tailwind CSS", "PWA"]
+  },
   {
     title: "Figma Design Implementation",
     description: "A web project demonstrating the implementation of a design from Figma, showcasing attention to detail and ability to translate UI/UX mockups into functional code.",
