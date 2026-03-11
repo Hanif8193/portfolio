@@ -18,6 +18,7 @@ const projects = [
     description: "A Progressive Web Application (PWA) designed to manage and track petty cash transactions efficiently, offering a seamless and intuitive user experience across all devices.",
     image: PatiCashImg,
     link: "https://pati-cash-pwa.vercel.app",
+    github: "https://github.com/Hanif8193/pati-cash.git",
     tech: ["Next.js", "Tailwind CSS", "PWA"]
   },
   {
@@ -135,13 +136,22 @@ function Project() {
                   {project.title}
                 </h1>
                 <p className="leading-relaxed mb-3 text-foreground/80">{project.description}</p>
-                {project.link && (
-                  <Link target="_blank" rel="noopener noreferrer" href={project.link}>
-                    <p className="leading-relaxed py-2 text-primary hover:underline">
-                      View Project →
-                    </p>
-                  </Link>
-                )}
+                <div className="flex gap-4">
+                  {project.link && (
+                    <Link target="_blank" rel="noopener noreferrer" href={project.link}>
+                      <p className="leading-relaxed py-2 text-primary hover:underline">
+                        View Project →
+                      </p>
+                    </Link>
+                  )}
+                  {project.github && (
+                    <Link target="_blank" rel="noopener noreferrer" href={project.github}>
+                      <p className="leading-relaxed py-2 text-primary hover:underline">
+                        GitHub Repo →
+                      </p>
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}
