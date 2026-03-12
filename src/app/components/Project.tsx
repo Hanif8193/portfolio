@@ -10,9 +10,17 @@ import FigmaImg from "../../../public/Screenshot (428).png"; // New image for Fi
 import Hakathon1 from "../../../public/Screenshot (429).png";
 import TodoAppImg from "../../../public/Screenshot (432).png";
 import PatiCashImg from "../../../public/Screenshot (1).png";
+import TruckPartStoreImg from "../../../public/Screenshot (4).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
+  {
+    title: "Truck Part Store Dashboard",
+    description: "A comprehensive dashboard for managing a truck parts store, featuring inventory management, sales tracking, and a user-friendly interface.",
+    image: TruckPartStoreImg,
+    link: "https://truck-part-store-88cy.vercel.app/dashboard",
+    tech: ["Next.js", "Tailwind CSS"]
+  },
   {
     title: "Pati Cash App",
     description: "A Progressive Web Application (PWA) designed to manage and track petty cash transactions efficiently, offering a seamless and intuitive user experience across all devices.",
