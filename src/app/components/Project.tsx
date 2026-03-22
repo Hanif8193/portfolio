@@ -18,7 +18,7 @@ const projects = [
     title: "Truck Part Store Dashboard",
     description: "A comprehensive dashboard for managing a truck parts store, featuring inventory management, sales tracking, and a user-friendly interface.",
     image: TruckPartStoreImg,
-    link: "https://truck-part-store-88cy.vercel.app/dashboard",
+    link: "https://truck-part-store.vercel.app",
     tech: ["Next.js", "Tailwind CSS"]
   },
   {
