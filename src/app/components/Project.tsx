@@ -11,9 +11,17 @@ import Hakathon1 from "../../../public/Screenshot (429).png";
 import TodoAppImg from "../../../public/Screenshot (432).png";
 import PatiCashImg from "../../../public/Screenshot (1).png";
 import TruckPartStoreImg from "../../../public/Screenshot (4).png";
+import CRMImg from "../../../public/Screenshot (9).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
+  {
+    title: "CRM Dashboard",
+    description: "A Customer Relationship Management (CRM) dashboard for managing contacts, tracking leads, and monitoring sales pipelines with a clean and responsive interface.",
+    image: CRMImg,
+    link: "https://crm-v3u8.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS"]
+  },
   {
     title: "Truck Part Store Dashboard",
     description: "A comprehensive dashboard for managing a truck parts store, featuring inventory management, sales tracking, and a user-friendly interface.",
