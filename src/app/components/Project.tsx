@@ -12,6 +12,7 @@ import TodoAppImg from "../../../public/Screenshot (432).png";
 import PatiCashImg from "../../../public/Screenshot (1).png";
 import TruckPartStoreImg from "../../../public/Screenshot (4).png";
 import CRMImg from "../../../public/Screenshot (9).png";
+import MRUTImg from "../../../public/Screenshot (15).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
@@ -20,6 +21,13 @@ const projects = [
     description: "A Customer Relationship Management (CRM) dashboard for managing contacts, tracking leads, and monitoring sales pipelines with a clean and responsive interface.",
     image: CRMImg,
     link: "https://crm-v3u8.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS"]
+  },
+  {
+    title: "MRUT Pro",
+    description: "A professional platform for managing and optimizing utility and resource tracking, featuring a modern UI with comprehensive data management capabilities.",
+    image: MRUTImg,
+    link: "https://www.mrut.pro/",
     tech: ["Next.js", "Tailwind CSS"]
   },
   {
