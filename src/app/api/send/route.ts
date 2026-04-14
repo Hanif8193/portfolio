@@ -1,8 +1,11 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 export async function POST(req: Request) {
+  if (!resend) {
+    return Response.json({ error: 'Email service not configured' }, { status: 500 });
+  }
   try {
     const { name, email, message } = await req.json();
 
