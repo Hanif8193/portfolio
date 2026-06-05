@@ -21,6 +21,7 @@ function Navbar() {
             <Link href={"/"} className="hover:text-primary transition-colors">Home</Link>
             <Link href={"/#About"} className="hover:text-primary transition-colors">About</Link>
             <Link href={"/#Skill"} className="hover:text-primary transition-colors">Skills</Link>
+            <Link href={"/#Certificate"} className="hover:text-primary transition-colors">Certificates</Link>
             <Link href={"/#Project"} className="hover:text-primary transition-colors">Projects</Link>
             <Link href={"/#Contact"} className="hover:text-primary transition-colors">Contact</Link>
           </nav>
@@ -33,7 +34,7 @@ function Navbar() {
             {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
           </button>
           <a
-            href={'/Mohammad-Hanif-CV.html'}
+            href={'/Hanif_Memon_Final_CV-v2.pdf'}
             target='_blank'
             rel="noopener noreferrer"
             className="inline-flex items-center bg-primary text-white border-0 py-2 px-4 focus:outline-none hover:bg-primary/80 rounded-lg text-base mt-4 md:mt-0 gap-2 transition-colors ml-4" // Added ml-4 for spacing
