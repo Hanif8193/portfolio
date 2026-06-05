@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
 
 function Contact() {
-  console.log('Contact component rendered/hydrated');
   const [formStatus, setFormStatus] = useState('');
+  const [isSending, setIsSending] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -25,15 +25,20 @@ function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      setFormStatus('Please fill in all fields.');
+      return;
+    }
+
+    setIsSending(true);
     setFormStatus('Sending...');
 
     try {
       const response = await fetch('/api/send', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name.trim(), email: email.trim(), message: message.trim() }),
       });
 
       const result = await response.json();
@@ -44,11 +49,12 @@ function Contact() {
         setEmail('');
         setMessage('');
       } else {
-        setFormStatus(`Failed: ${result.error || 'Unknown error'}`);
+        setFormStatus(result.error || 'Failed to send. Please try again.');
       }
-    } catch (error) {
-      console.error(error);
-      setFormStatus('Failed to send message.');
+    } catch {
+      setFormStatus('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSending(false);
     }
   };
 
@@ -156,8 +162,12 @@ function Contact() {
                   className="w-full bg-background rounded border border-white/20 focus:border-primary focus:ring-2 focus:ring-primary/50 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out text-foreground"
                 ></textarea>
               </div>
-              <button type="submit" className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary/80 rounded-lg text-lg transition-colors">
-                Send Message
+              <button
+                type="submit"
+                disabled={isSending}
+                className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary/80 rounded-lg text-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSending ? 'Sending...' : 'Send Message'}
               </button>
             </form>
             {formStatus && (

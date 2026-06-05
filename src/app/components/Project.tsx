@@ -13,9 +13,57 @@ import PatiCashImg from "../../../public/Screenshot (1).png";
 import TruckPartStoreImg from "../../../public/Screenshot (4).png";
 import CRMImg from "../../../public/Screenshot (9).png";
 import MRUTImg from "../../../public/Screenshot (15).png";
+import PortfolioImg from "../../../public/Screenshot (32).png";
+import TaskFlowImg from "../../../public/Screenshot (33).png";
+import BlogSpaceImg from "../../../public/Screenshot (34).png";
+import NextShopImg from "../../../public/Screenshot (35).png";
+import SaasDashImg from "../../../public/Screenshot (36).png";
+import ResumeAIImg from "../../../public/Screenshot (37).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
+  {
+    title: "ResumeAI",
+    description: "An AI-powered resume analyzer that scores PDF resumes across 5 dimensions — ATS, Skills, Strengths, and more — powered by Claude AI. Delivers instant feedback and improvement tips in under 30 seconds.",
+    image: ResumeAIImg,
+    link: "https://ai-integrated-web-app.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "Claude AI"]
+  },
+  {
+    title: "SaaS Dashboard",
+    description: "A comprehensive SaaS admin dashboard featuring team management, API key management, billing, activity logs, and organization settings. Includes quick-action shortcuts and a clean dark UI.",
+    image: SaasDashImg,
+    link: "https://nexe-saas-dashboard.vercel.app/dashboard",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"]
+  },
+  {
+    title: "NextShop",
+    description: "A modern e-commerce platform with product listings across multiple categories including Sports, Accessories, Clothing, Electronics, and Home. Features product cards with stock status, pricing, and a clean responsive layout.",
+    image: NextShopImg,
+    link: "https://e-commerce-nexe-agent.vercel.app/products",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"]
+  },
+  {
+    title: "BlogSpace",
+    description: "A full-featured blog platform for exploring articles on technology, design, and business. Features category filters, a dashboard, and a clean layout with a vibrant hero section.",
+    image: BlogSpaceImg,
+    link: "https://blog-nexe-agent.vercel.app/blog",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"]
+  },
+  {
+    title: "TaskFlow",
+    description: "A modern task management dashboard for organizing and tracking tasks with priority levels, due dates, and status filters. Features a clean dark UI with real-time stats for total, completed, pending, and due-today tasks.",
+    image: TaskFlowImg,
+    link: "https://todo-five-sage-18.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"]
+  },
+  {
+    title: "Personal Portfolio",
+    description: "A modern, responsive personal portfolio website showcasing projects, skills, and experience. Built with Next.js and Tailwind CSS with smooth animations and a dark theme.",
+    image: PortfolioImg,
+    link: "https://portfolio-web-lemon-three.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"]
+  },
   {
     title: "CRM Dashboard",
     description: "A Customer Relationship Management (CRM) dashboard for managing contacts, tracking leads, and monitoring sales pipelines with a clean and responsive interface.",
@@ -27,7 +75,7 @@ const projects = [
     title: "MRUT Pro",
     description: "A professional platform for managing and optimizing utility and resource tracking, featuring a modern UI with comprehensive data management capabilities.",
     image: MRUTImg,
-    link: "https://www.mrut.pro/",
+    link: "https://mr-u-t.vercel.app/",
     tech: ["Next.js", "Tailwind CSS"]
   },
   {
