@@ -11,7 +11,7 @@ interface AnimatedSectionProps {
 
 const AnimatedSection = ({ children, id, className = '' }: AnimatedSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const entry = useIntersectionObserver(sectionRef, { threshold: 0.1, freezeOnceVisible: true });
+  const entry = useIntersectionObserver(sectionRef, { threshold: 0, freezeOnceVisible: true });
   const isVisible = !!entry?.isIntersecting;
 
   return (

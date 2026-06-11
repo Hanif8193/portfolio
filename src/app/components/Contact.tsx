@@ -62,7 +62,7 @@ function Contact() {
     <AnimatedSection id='Contact'>
       <section className="body-font relative">
         <div className="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div className="lg:w-2/3 md:w-1/2 bg-card rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+          <div className="lg:w-2/3 md:w-1/2 min-h-[400px] bg-card rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <iframe
               width="100%"
               height="100%"
