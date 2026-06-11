@@ -27,6 +27,7 @@ function Navbar() {
             <Link href={"/#Certificate"} className="hover:text-primary transition-colors">Certificates</Link>
             <Link href={"/#Project"} className="hover:text-primary transition-colors">Projects</Link>
             <Link href={"/#Contact"} className="hover:text-primary transition-colors">Contact</Link>
+            <a href={"/Mohammad-Hanif-CV.html"} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Resume</a>
           </nav>
 
           {/* Desktop Actions */}
@@ -69,7 +70,8 @@ function Navbar() {
             <Link href={"/#Skill"} onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2 border-b border-white/5">Skills</Link>
             <Link href={"/#Certificate"} onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2 border-b border-white/5">Certificates</Link>
             <Link href={"/#Project"} onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2 border-b border-white/5">Projects</Link>
-            <Link href={"/#Contact"} onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Contact</Link>
+            <Link href={"/#Contact"} onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2 border-b border-white/5">Contact</Link>
+            <a href={"/Mohammad-Hanif-CV.html"} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Resume</a>
             <div className="flex gap-3 pt-4 mt-2 border-t border-white/10">
               <button
                 onClick={toggleTheme}
