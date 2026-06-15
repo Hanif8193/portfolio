@@ -40,7 +40,7 @@ function Navbar() {
               {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
             </button>
             <a
-              href={'/Hanif_Memon_Final_CV-v2.pdf'}
+              href={'/Hanif_Memon_Final_CV-v2-compressed.pdf'}
               target='_blank'
               rel="noopener noreferrer"
               className="inline-flex items-center bg-primary text-white border-0 py-2 px-4 focus:outline-none hover:bg-primary/80 rounded-lg text-base gap-2 transition-colors"
@@ -81,7 +81,7 @@ function Navbar() {
                 {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
               </button>
               <a
-                href={'/Hanif_Memon_Final_CV-v2.pdf'}
+                href={'/Hanif_Memon_Final_CV-v2-compressed.pdf'}
                 target='_blank'
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex justify-center items-center bg-primary text-white border-0 py-2 px-4 focus:outline-none hover:bg-primary/80 rounded-lg text-base gap-2 transition-colors"

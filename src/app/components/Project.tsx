@@ -19,9 +19,17 @@ import BlogSpaceImg from "../../../public/Screenshot (34).png";
 import NextShopImg from "../../../public/Screenshot (35).png";
 import SaasDashImg from "../../../public/Screenshot (36).png";
 import ResumeAIImg from "../../../public/Screenshot (37).png";
+import PayAgentImg from "../../../public/Screenshot (46).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
+  {
+    title: "PayAgent: AI-Driven Web3 Freelance Payment Ecosystem",
+    description: "A sophisticated fintech platform that bridges the gap between traditional freelance workflows and decentralized finance. PayAgent leverages AI to streamline payment processes and utilizes the Arc Testnet for secure, near-instant USDC settlements.",
+    image: PayAgentImg,
+    link: "https://frontend-hazel-gamma-xtb0q17d6f.vercel.app/register",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "AI", "Web3"]
+  },
   {
     title: "ResumeAI",
     description: "An AI-powered resume analyzer that scores PDF resumes across 5 dimensions — ATS, Skills, Strengths, and more — powered by Claude AI. Delivers instant feedback and improvement tips in under 30 seconds.",
