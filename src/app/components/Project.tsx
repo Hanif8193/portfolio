@@ -20,6 +20,7 @@ import NextShopImg from "../../../public/Screenshot (35).png";
 import SaasDashImg from "../../../public/Screenshot (36).png";
 import ResumeAIImg from "../../../public/Screenshot (37).png";
 import PayAgentImg from "../../../public/Screenshot (46).png";
+import ResumeBuilderImg from "../../../public/Screenshot (52).png";
 import AnimatedSection from "./AnimatedSection";
 
 const projects = [
@@ -149,6 +150,13 @@ const projects = [
     image: S,
     link: "https://mountain-wheat.vercel.app/",
     tech: ["Next.js", "Tailwind CSS", "Sanity.io"]
+  },
+  {
+    title: "Resume Builder",
+    description: "A powerful online resume builder that helps you create professional, ATS-friendly resumes in minutes. Features multiple templates, real-time preview, and easy export options.",
+    image: ResumeBuilderImg,
+    link: "https://resume-builder-liart-tau.vercel.app/",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"]
   }
 ];
 
